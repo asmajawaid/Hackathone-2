@@ -27,7 +27,7 @@ export default function NavBar() {
               <Link href="/Pages" className="text-[#636270] w-[42px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">Pages</Link>
             </li>
             <li>
-              <Link href="/AboutUs" className="text-[#636270] w-[41px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">About</Link>
+              <Link href="/aboutUs" className="text-[#636270] w-[41px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">About</Link>
             </li>
           </ul>
 
@@ -57,11 +57,14 @@ export default function NavBar() {
           </Sheet>
         </div>
           {/* CONTACT NO */}
+      <Link href="/contactUs">
+
         <div className="flex flex-row justify-between items-start w-[168px] h-[15px] gap-[8px] p-0 my-0 mx-auto">
           <p className="text-[#636270] w-[57px] h-[15px] font-normal text-[14px] leading-[15.4px]">Contact:</p>
           <p className="text-[#272343] w-[103px] h-[15px] font-medium text-[14px] leading-[15.4px]">(808) 555-0111</p>
+         
         </div>
-
+      </Link>
       </div>
     </>
   );

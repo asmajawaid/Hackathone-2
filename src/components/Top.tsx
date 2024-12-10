@@ -2,6 +2,7 @@ import React from 'react'
 import { FaCheck } from "react-icons/fa6";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiCircleAlert } from "react-icons/ci";
+import Link from 'next/link';
 
 export default function Top() {
   return (
@@ -22,7 +23,7 @@ export default function Top() {
                     <div className='text-[#FFFFFF] w-[24px] h-[17px] items-center font-normal text-[13px] leading-[16.9px]'>Eng</div>
                     <div className='text-[#FFFFFF] w-[16px] h-[13.5px] '><RiArrowDropDownLine /></div>
             </div>
-            <div className='text-[#FFFFFF] w-[30px] h-[17px] font-normal text-[13px] leading-[16.9px] items-center'>Faqs</div>
+            <div className='text-[#FFFFFF] w-[30px] h-[17px] font-normal text-[13px] leading-[16.9px] items-center'><Link href="/faq">Faqs</Link></div>
              <div className='flex flex-row items-start p-0 w-[87px] h-[17px] gap-[6px]'>
                 <div className='text-[#FFFFFF] w-4 h-4 opacity-70'><CiCircleAlert /></div>
                 <div className='text-[#FFFFFF] w-[65px] h-[17px] font-normal text-[13px] leading-[16.9px] items-center'>Need Help</div>

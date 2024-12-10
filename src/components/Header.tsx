@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { GiSofa } from "react-icons/gi";
@@ -16,6 +17,7 @@ export default function Header() {
         </div>
 
         <div className="bg-white rounded-sm flex flex-row items-start w-[120px] h-[44px] p-0 gap-3 my-0 mx-auto border border-purple-600">
+          <Link href="/Cart">
           {/* cart */}
           <div className="flex flex-row items-center w-[56px] h-[22px] p-0 gap-2">
             <div className="text-[#272343] w-[22px] h-[22px] mt-[2.98px] ml-[2.52px]">
@@ -33,6 +35,7 @@ export default function Header() {
                 </div> */}
               </div>
             </div>
+            </Link>
         
         </div>
       </div>

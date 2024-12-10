@@ -3,7 +3,7 @@ import React from 'react'
 export default function ProductPage() {
   return (
     <div>
-      <h1>I AM product page</h1>
+      <h1>I am PRODUCT PAGE</h1>
     </div>
   )
 }
