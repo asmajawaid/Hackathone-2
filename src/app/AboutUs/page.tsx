@@ -2,44 +2,169 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { GoCreditCard } from "react-icons/go";
+import { IoCheckmarkCircleOutline } from "react-icons/io5";
+import { LuSprout } from "react-icons/lu";
+import { TbTruckDelivery } from "react-icons/tb";
+
+
+const AboutContent = () => (
+  <div className="w-full md:w-1/2 px-4 md:px-8 mb-6 md:mb-0 bg-teal-600 p-8 rounded-lg shadow-lg text-white flex flex-col justify-between items-center md:items-start">
+    <h1 className="title-font font-medium text-2xl md:text-3xl mb-4 text-white text-center md:text-left">
+      About Us - Comforty
+    </h1>
+    <p className="leading-relaxed mb-6 text-center md:text-left">
+      Pour-over craft beer pug drinking vinegar live-edge gastropub, keytar neutra sustainable fingerstache kickstarter.
+    </p>
+    <button className="px-6 py-2 bg-teal-800 text-white font-semibold rounded hover:bg-teal-900 transition duration-300">
+      View Product
+    </button>
+  </div>
+);
+
+const ImageContent = () => (
+  <div className="w-full md:w-1/2 px-4 md:px-8 rounded-lg overflow-hidden mt-6 md:mt-0">
+    <div className="relative w-full h-96">
+      <Image
+        className="object-cover object-center"
+        src="/featuredata/Sofa1.png"
+        alt="About Us Image"
+        layout="fill"
+        quality={90}
+      />
+    </div>
+  </div>
+);
+
 
 export default function AboutUs() {
   return (
     <>
-      <div className="flex flex-row ">
-        {/* left sidde */}
-        <div className=" bg-[#007580] text-white w-[672px] h-[478px] mt-[303px] ml-[300px] gap- ">
-          <div className="flex flex-col items-start p-0 gap-3 mt-[64px] ml-[64px] ">
-            <h1 className="w-[325px] h-[39px] text-[32px] leading-[38px] font-bold ">About Us - Comforty</h1>
-            <p className="w-[495px] h-[110px] font-normal text-[18px] ">
-              At Comforty, we believe that the right chair can transform your
-              space and elevate your comfort. Specializing in ergonomic design,
-              premium materials, and modern aesthetics, we craft chairs that
-              seamlessly blend style with functionality.
-            </p>
-          </div>
-           <Link href="/" className="w-[179px] h-[56px] flex flex-row items-start gap-[10px] py-4 px-8 bg-[#029FAE] ml-[44px] mt-[108px]"><button className="w-[115px] h-[24px] ">View collection</button></Link>
-        
-        </div>
-        {/* right side */}
-        <div className="">
-          <Image
-            src="/images/card1.jpg"
-            width={619}
-            height={478}
-            alt=""
-            className="w-[619px] h-[478px] mt-[303px] ml-[100px] "
-          />
-        </div>
-      </div>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start content-start mt-20 px-4 lg:px-[0px]">
+  {/* Left side */}
+  <div className="bg-[#007580] text-white p-6 lg:p-12 flex flex-col gap-12">
+    <h1 className="text-[24px] lg:text-[32px] leading-[32px] lg:leading-[38px] font-bold">
+      About Us - Comforty
+    </h1>
+    <p className="text-[14px] lg:text-[16px] leading-[20px] font-normal">
+      At Comforty, we believe that the right chair can transform your space
+      and elevate your comfort. Specializing in ergonomic design, premium
+      materials, and modern aesthetics, we craft chairs that seamlessly blend
+      style with functionality.
+    </p>
+    <button className="flex justify-start">
+    <Link
+      href="/productPage"
+      className="inline-block py-3 px-6 bg-[#029FAE] text-white rounded-md text-center"
+    >
+      View collection
+    </Link>
+    </button>
+  </div>
 
-      {/* Heading */}
-      <h1 className="text-[#272343] w-[501px] h-[35px] mt-[250px] ml-[750px] gap-5 text-[32px] capitalize leading-[35.2px] font-semibold">What makes our Brand Different</h1>
-        
-        {/* bottom */}
-      <div className="w-[1320px] h-[244px] mt-[166px] ml-[330px] bg-slate-300">
+  {/* Right side */}
+  <div className="w-full flex justify-center ">
+    <Image
+      src="/images/card1.jpg"
+      width={619}
+      height={478}
+      alt="Comforty product"
+      className="w-full max-w-[619px] h-auto object-cover"
+    />
+  </div>
+</div>
 
+
+
+
+
+  {/* Heading */}
+  <h1 className="text-[#272343] text-[24px] lg:text-[32px] mt-[50px] lg:mt-[100px] mx-auto text-center font-semibold">
+    What makes our Brand Different
+  </h1>
+
+  {/* Bottom section */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full px-4 lg:max-w-[1320px] mx-auto mt-[50px] lg:mt-[100px]">
+    {/* 1st */}
+    <div className="flex flex-col items-start text-start bg-[#F9F9F9] p-6 rounded-md shadow-md">
+      <TbTruckDelivery className="text-[#007580] text-3xl" />
+      <h3 className="font-medium text-lg mt-4 text-[#007580]">Next day as standard</h3>
+      <p className="text-sm mt-2 text-[#007580]">
+        Order before 3pm and get your order the next day as standard
+      </p>
+    </div>
+    {/* 2nd */}
+    <div className="flex flex-col items-start text-start bg-[#F9F9F9] p-6 rounded-md shadow-md">
+      <IoCheckmarkCircleOutline className="text-[#007580] text-3xl" />
+      <h3 className="font-medium text-lg mt-4 text-[#007580]">Made by true artisans</h3>
+      <p className="text-sm mt-2 text-[#007580]">
+        Handmade crafted goods made with real passion and craftsmanship
+      </p>
+    </div>
+    {/* 3rd */}
+    <div className="flex flex-col items-start text-start bg-[#F9F9F9] p-6 rounded-md shadow-md">
+      <GoCreditCard className="text-[#007580] text-3xl" />
+      <h3 className="font-medium text-lg mt-4 text-[#007580]">Unbeatable prices</h3>
+      <p className="text-sm mt-2 text-[#007580]">
+        For our materials and quality, you won't find better prices anywhere
+      </p>
+    </div>
+    {/* 4th */}
+    <div className="flex flex-col items-start text-start bg-[#F9F9F9] p-6 rounded-md shadow-md">
+      <LuSprout className="text-[#007580] text-3xl" />
+      <h3 className="font-medium text-lg mt-4 text-[#007580]">Recycled packaging</h3>
+      <p className="text-sm mt-2 text-[#007580]">
+        We use 100% recycled materials to ensure our footprint is more
+        manageable
+      </p>
+    </div>
+  </div>
+
+  {/* Popular Products */}
+  <div className=" py-12">
+    <h1 className="text-center text-[24px] lg:text-[32px] font-semibold">
+      Our Popular Products
+    </h1>
+    <div className="grid grid-cols-[2fr_1fr_1fr] justify-center gap-6 mt-8 px-4">
+      {/* Product 1 */}
+      <div className="transform transition-transform duration-300 ease-in-out hover:scale-105 flex flex-col items-start overflow-hidden group cursor-pointer hover:shadow-2xl">
+        <Image
+          src="/images/ourPopularProduct.jpg"
+          alt="The Poplar suede sofa"
+          width={500}
+          height={312}
+          className="w-full max-w-[500px]"
+        />
+        <p className="text-lg mt-4 font-medium p-2">The Poplar suede sofa</p>
+        <p className="text-sm p-2">$99.00</p>
       </div>
-    </>
+      {/* Product 2 */}
+      <div className="transform transition-transform duration-300 ease-in-out hover:scale-105 flex flex-col items-start overflow-hidden group cursor-pointer hover:shadow-2xl">
+        <Image
+          src="/images/ourPopularProduct1.jpg"
+          alt="The Dandy chair"
+          width={150}
+          height={312}
+          className="w-full max-w-[300px] h-auto"
+        />
+        <p className="text-lg mt-4 font-medium p-2">The Dandy chair</p>
+        <p className="text-sm p-2">$99.00</p>
+      </div>
+      {/* Product 3 */}
+      <div className="transform transition-transform duration-300 ease-in-out hover:scale-105 flex flex-col items-start overflow-hidden group cursor-pointer hover:shadow-2xl">
+        <Image
+          src="/images/o.jpg"
+          alt="The Dandy chair"
+          width={150}
+          height={312}
+          className="w-full max-w-[300px] h-auto"
+        />
+        <p className="text-lg mt-4 font-medium p-2">The Dandy chair</p>
+        <p className="text-sm p-2">$99.00</p>
+      </div>
+    </div>
+  </div>
+</>
+
   );
 }

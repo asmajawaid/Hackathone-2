@@ -9,135 +9,142 @@ import { BiSupport } from "react-icons/bi";
 export default function ContactUs() {
   return (
     <>
-      <div className=" w-[1440px] h-[1040px]">
-        {/* HEADING */}
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="w-[375px] h-[54px] font-semibold text-[36px] leading-[54px] text-black mt-[70px]">
-            Get In Touch With Us
-          </h1>
-          <p className="w-[644px] h-[48px] text-center">
-            For More Information About Our Product & Services. Please Feel Free
-            To Drop Us An Email. Our Staff Always Be There To Help You Out. Do
-            Not Hesitate!
-          </p>
-        </div>
-        {/* SMALL DIV */}
-        <div className=" flex sm:flex-col lg:flex-row">
-          {/* CONTACT INFORMATION */}
-          <div className="absolute w-[393px] h-[537px]  ml-[431px] mt-[192px] flex flex-col ">
-          <div className="mb-6 text-base"><TiLocation  className="w-[27px] h-[27.5px]"/><h1 className=" font-medium text-2xl leading-9 ml-8 mt-0">Addresss</h1>
-          <p className="ml-8">236 5th SE Avenue, New <br /> York NY10000, United <br /> States</p>
-          </div>
-          <div className="mb-6"><FaPhone className="absolute w-[22px] h-[22px]" /><h1 className="font-medium text-2xl leading-9 ml-8 mt-0">Phone</h1>
-          <p className="ml-8 text-base">Mobile: +(84) 546-6789 <br />
-          Hotline: +(84) 456-6789</p>
-          </div>
-          <div><MdOutlineAccessTimeFilled className="absolute w-[23px] h-[23px]"/><h1 className="font-medium text-2xl leading-9 ml-8 mt-0">Working Time</h1>
-          <p className="ml-8 text-base">Monday-Friday: 9:00 - 22:00 <br />
-          Saturday-Sunday: 9:00 - 21:00</p>
-          </div>
-             </div>
-
-          {/* FORM */}
-          <div className="absolute mt-[124px] w-[635px] h-[923px] ml-[854px] ">
-            <div className="lg:w-2/4 flex flex-col md:ml-auto w-full md:py-8 mt-20 md:mt-0">
-            
-            <div className="relative mb-4 flex flex-col">
-                <label
-                  htmlFor="email"
-                  className="leading-6 text-base text-black font-medium mb-3 ml-5"
-                >
-                  Your name
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-[528.75px] bg-white rounded-[10px] border border-[#636270] ml-5 focus:border-[#029FAE] focus:ring-2 focus:ring-[#007580] text-base outline-none text-[#9F9F9F] py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
+       <div className="w-full px-4 sm:px-6 lg:px-8">
+            {/* HEADING */}
+            <div className="flex flex-col justify-center items-center text-center my-8">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black mb-4">
+                Get In Touch With Us
+              </h1>
+              <p className="max-w-2xl text-sm sm:text-base lg:text-lg text-gray-700">
+                For More Information About Our Product & Services. Please Feel Free To Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!
+              </p>
+            </div>
+      
+            {/* CONTACT INFORMATION AND FORM */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* CONTACT INFORMATION */}
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <TiLocation className="text-[#029FAE] w-8 h-8" />
+                  <div>
+                    <h2 className="text-xl font-medium">Address</h2>
+                    <p className="text-sm text-gray-600">
+                      236 5th SE Avenue, New York NY10000, United States
+                    </p>
+                  </div>
+                </div>
+      
+                <div className="flex items-start space-x-4">
+                  <FaPhone className="text-[#029FAE] w-6 h-6" />
+                  <div>
+                    <h2 className="text-xl font-medium">Phone</h2>
+                    <p className="text-sm text-gray-600">
+                      Mobile: +(84) 546-6789 <br /> Hotline: +(84) 456-6789
+                    </p>
+                  </div>
+                </div>
+      
+                <div className="flex items-start space-x-4">
+                  <MdOutlineAccessTimeFilled className="text-[#029FAE] w-6 h-6" />
+                  <div>
+                    <h2 className="text-xl font-medium">Working Time</h2>
+                    <p className="text-sm text-gray-600">
+                      Monday-Friday: 9:00 - 22:00 <br /> Saturday-Sunday: 9:00 - 21:00
+                    </p>
+                  </div>
+                </div>
               </div>
-
-              <div className="relative mb-4 flex flex-col">
-                <label
-                  htmlFor="email"
-                  className="leading-6 text-base text-black font-medium mb-3 ml-5"
-                >
-                Email address 
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-[528.75px] bg-white rounded-[10px] border ml-5 border-[#636270] focus:border-[#029FAE] focus:ring-2 focus:ring-[#007580] text-base outline-none text-[#9F9F9F] py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
+      
+              {/* FORM */}
+              <div className="bg-white shadow-lg rounded-lg p-6">
+                <form className="space-y-4">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                      Your Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      className="w-full mt-1 p-2 border border-gray-300 rounded-md focus:border-[#029FAE] focus:ring focus:ring-[#029FAE] focus:ring-opacity-50"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+      
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      className="w-full mt-1 p-2 border border-gray-300 rounded-md focus:border-[#029FAE] focus:ring focus:ring-[#029FAE] focus:ring-opacity-50"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+      
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      className="w-full mt-1 p-2 border border-gray-300 rounded-md focus:border-[#029FAE] focus:ring focus:ring-[#029FAE] focus:ring-opacity-50"
+                      placeholder="Enter subject"
+                    />
+                  </div>
+      
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      
+                      className="w-full mt-1 p-2 border border-gray-300 rounded-md focus:border-[#029FAE] focus:ring focus:ring-[#029FAE] focus:ring-opacity-50"
+                      placeholder="Write your message"
+                    ></textarea>
+                  </div>
+      
+                  <button
+                    type="submit"
+                    className="w-full bg-[#029FAE] text-white py-2 px-4 rounded-md hover:bg-[#007580] focus:outline-none focus:ring focus:ring-[#007580] focus:ring-opacity-50"
+                  >
+                    Submit
+                  </button>
+                </form>
               </div>
-              <div className="relative mb-4 flex flex-col">
-                <label
-                  htmlFor="email"
-                  className="leading-6 text-base text-black font-medium mb-3 ml-5"
-                >
-                  Subject
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-[528.75px] bg-white rounded-[10px] border ml-5 border-[#636270] focus:border-[#029FAE] focus:ring-2 focus:ring-[#007580] text-base outline-none text-[#9F9F9F] py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-
-              <div className="relative mb-4 flex flex-col">
-                <label
-                  htmlFor="message"
-                  className="leading-6 text-base text-black font-medium mb-3 ml-5"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  className="w-[528.75px] bg-white rounded-[10px] border ml-5 border-[#636270] focus:border-[#029FAE] focus:ring-2 focus:ring-[#007580] h-32 text-base outline-none text-[#9F9F9F] py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  defaultValue={""}
-                />
-              </div>
-              <div className="">
-              <button className="w-[237px] h-[55px] text-white text-base ml-5 font-normal leading-6 bg-[#029FAE] border-0 py-2 px-6 focus:outline-none hover:bg-white hover:text-[#007580] hover:border-[#029FAE] rounded-[5px] focus:border-[#029FAE]">
-              Submit
-              </button>
+            </div>
+      
+            {/* INFO BOXES */}
+            <div className="bg-[#F4F4F4] text-black mt-12 py-12 px-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div className="flex items-center space-x-4">
+                  <HiOutlineTrophy className="w-12 h-12" />
+                  <div>
+                    <h3 className="text-lg font-semibold">High Quality</h3>
+                    <p className="text-sm">Crafted from top materials</p>
+                  </div>
+                </div>
+      
+                <div className="flex items-center space-x-4">
+                  <LuBadgeAlert className="w-12 h-12" />
+                  <div>
+                    <h3 className="text-lg font-semibold">Warranty Protection</h3>
+                    <p className="text-sm">Over 2 years</p>
+                  </div>
+                </div>
+      
+                <div className="flex items-center space-x-4">
+                  <BiSupport className="w-12 h-12" />
+                  <div>
+                    <h3 className="text-lg font-semibold">24/7 Support</h3>
+                    <p className="text-sm">Dedicated support</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="bg-indigo-400 w-[1320px] h-[270px] ml-[300px] mt-[0px] absolute flex flex-col items-center justify-between gap-[10px] py-[100px] ">
-          <ul className="w-[1188px] h-[70px] flex sm:flex-col md:flex-col lg:flex-row items-center gap-[50px] justify-between">
-            <li className="w-[337px] h-[70px] gap-[10px]">
-            <HiOutlineTrophy className="w-[60px] h-[60px]"/>
-              <div className="w-[267px] h-[70px] flex flex-col items-start p-0 gap-[2px]">
-                <h6 className="w-[157px] h-[38px] text-[25px] font-semibold leading-[37.5px]">High Quality</h6>
-                <p className="w-[267px] h-[30px] text-[20px] font-semibold leading-[30px]">crafted from top materials</p>
-              </div>
-            </li>
-
-            <li className="w-[327px] h-[70px] gap-[10px]">
-            <LuBadgeAlert  className="w-[60px] h-[60px]"/>
-              <div className="w-[258px] h-[70px] flex flex-col items-start p-0 gap-[2px]">
-                <h6 className="w-[258px] h-[38px] text-[25px] font-semibold leading-[37.5px]">Warranty Protection</h6>
-                <p className="w-[126px] h-[30px] text-[20px] font-semibold leading-[30px]">Over 2 years</p>
-              </div>
-            </li> 
-            
-            <li className="w-[259px] h-[70px] gap-[10px]">
-            <BiSupport  className="w-[60px] h-[60px]"/>
-              <div className="w-[189px] h-[70px] flex flex-col items-start p-0 gap-[2px]">
-                <h6 className="w-[177px] h-[38px] text-[25px] font-semibold leading-[37.5px]">24 / 7 Support</h6>
-                <p className="w-[189px] h-[30px] text-[20px] font-semibold leading-[30px]">Dedicated support</p>
-              </div>
-            </li>
-
-          </ul>
-      </div>
     </>
   );
 }

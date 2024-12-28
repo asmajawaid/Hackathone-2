@@ -4,41 +4,60 @@ import React from 'react'
 export default function TopCategerious() {
   return (
     <>
-      <div className='absolute w-[2216px] h-[508px] mt-[1867px] ml-[-148px]'>
-      <div className='absolute w-[1920px] h-[44px] ml-[148px] mt-0 flex flex-row justify-between items-center py-0 px-[300px] gap-[846px]'>
-       <div className='w-[237px] h-[35px] text-[32px] leading-[35.2px] text-[#272343] font-semibold'>Top categories</div>
-      </div>
+        <div className="relative w-full mt-16">
+              {/* Header */}
+              <div className="flex justify-start items-start w-full h-[44px] mb-8">
+                <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold text-[#272343]">
+                  Top Categories
+                </h2>
+              </div>
       
-      {/* CARDS 1*/}
-      <div className='absolute w-[424px] h-[424px] mt-[84px] ml-[448px] rounded-[10px]'>
-         <Image src="/images/card9.jpg" width={424} height={424} alt='wing chair' className='w-[424px] h-[424px]'/>
-         <div className='flex flex-col items-start p-[20px] gap-2 absolute rounded-b-[10px] bg-[#000000B2] backdrop-grayscale'>
-            <div className='w-[384px] h-[24px] text-[20px] leading-[22px] text-white'>Wing Chair</div>
-            <div className='w-[376px] h-[15px] text-[14px] leading-[15.4px] text-[#ffffff] opacity-70 font-normal'>3,584 Products</div>
-
-         </div>
-      </div>
-
-      {/* CARDS 2*/}
-      <div className='absolute w-[424px] h-[424px] mt-[84px] ml-[896px] rounded-[10px]'>
-         <Image src="/images/card5.jpg" width={424} height={424} alt='wing chair' className='w-[424px] h-[424px]'/>
-         <div className='flex flex-col items-start p-[20px] gap-2 absolute rounded-b-[10px] bg-[#000000B2] backdrop-grayscale'>
-            <div className='w-[384px] h-[24px] text-[20px] leading-[22px] text-white'>Wooden Chair</div>
-            <div className='w-[376px] h-[15px] text-[14px] leading-[15.4px] text-[#ffffff] opacity-70 font-normal'>157 Products</div>
-
-         </div>
-      </div>
-
-       {/* CARDS 3*/}
-      <div className='absolute w-[424px] h-[424px] mt-[84px] ml-[1344px] rounded-[10px]'>
-         <Image src="/images/card11.png" width={424} height={424} alt='wing chair' className='w-[424px] h-[424px]'/>
-         <div className='flex flex-col items-start p-[20px] gap-2 absolute rounded-b-[10px] bg-[#000000B2] backdrop-grayscale cursor-pointer'>
-            <div className='w-[384px] h-[24px] text-[20px] leading-[22px] text-white'>Wooden Chair</div>
-            <div className='w-[376px] h-[15px] text-[14px] leading-[15.4px] text-[#ffffff] opacity-70 font-normal'>157 Products</div>
-
-         </div>
-      </div>
-      </div>
+              {/* Cards Container */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                {/* Card Components */}
+                {[
+                  {
+                    image: "/images/card9.jpg",
+                    title: "Wing Chair",
+                    products: "3,584 Products",
+                  },
+                  {
+                    image: "/images/card5.jpg",
+                    title: "Wooden Chair",
+                    products: "157 Products",
+                  },
+                  {
+                    image: "/images/card11.png",
+                    title: "Wooden Chair",
+                    products: "157 Products",
+                  },
+                ].map((category, index) => (
+                  <div
+                    key={index}
+                    className="relative w-[250px] h-[300px] sm:w-[200px] sm:h-[350px]  lg:w-[300px] max-w-[424px] lg:gap-10 lg:h-[424px] rounded-[10px] overflow-hidden group cursor-pointer hover:shadow-2xl"
+                  >
+                    {/* Image */}
+                    <Image
+                      src={category.image}
+                      width={424}
+                      height={424}
+                      alt={category.title}
+                      className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                    />
+      
+                    {/* Hover Overlay */}
+                    <div className="absolute bottom-0 left-0 w-full bg-[#000000B2] p-4 flex flex-col gap-2 backdrop-grayscale rounded-b-[10px] translate-y-full group-hover:translate-y-0 transform transition-transform duration-300 ease-in-out hover:scale-105">
+                      <h3 className="text-white text-[16px] sm:text-[18px] lg:text-[20px] font-medium">
+                        {category.title}
+                      </h3>
+                      <p className="text-white opacity-70 text-[12px] sm:text-[14px] font-normal">
+                        {category.products}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
 
         
     </>

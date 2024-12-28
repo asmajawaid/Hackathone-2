@@ -9,6 +9,7 @@ import CompanyLogo from './companyLogo/page'
 export default function Home() {
   return (
     <div>
+     
       <Hero/>
       <CompanyLogo/>
       <FeatureProduct/>
