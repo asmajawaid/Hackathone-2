@@ -35,7 +35,7 @@ export default function RootLayout({
         <Top/>
         <Header/>
         <NavBar/>
-        <main className="px-4 sm:px-8 md:px-16 lg:px-[179px]">
+        <main className="px-1 sm:px-6 md:px-10 lg:px-[179px]">
         {children }
        </main>
         <Footer/>
