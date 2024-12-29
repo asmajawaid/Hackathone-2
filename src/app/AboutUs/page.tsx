@@ -50,7 +50,7 @@ export default function AboutUs() {
             premium materials, and modern aesthetics, we craft chairs that
             seamlessly blend style with functionality.
           </p>
-          <button className="flex justify-start">
+          <button className="flex justify-start mt-6">
             <Link
               href="/productPage"
               className="inline-block py-3 px-6 bg-[#029FAE] text-white rounded-md text-center"
