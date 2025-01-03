@@ -44,17 +44,17 @@ export default function NavBar() {
               <Link href="/Shop" className="text-[#636270] w-[35px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">Shop</Link>
             </li>
             <li>
-              <Link href="/ProductPage" className="text-[#636270] w-[53px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">Product</Link>
+              <Link href="/product" className="text-[#636270] w-[53px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">Product</Link>
             </li>
             <li>
-              <Link href="/Pages" className="text-[#636270] w-[42px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">Pages</Link>
+              <Link href="/singleProductPage" className="text-[#636270] w-[42px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">Pages</Link>
             </li>
             <li>
-              <Link href="/About" className="text-[#636270] w-[41px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">About</Link>
+              <Link href="/aboutUs" className="text-[#636270] w-[41px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">About</Link>
             </li>
               </ul>
 
-              <Link href="/contactUs" className="lg:hidden hover:text-[#007580]">
+              {/* <Link href="/contactUs" className="lg:hidden hover:text-[#007580]"> */}
 
         <div className="flex flex-row justify-between items-start w-[168px] h-[15px] gap-[8px] p-0  mx-auto ">
           <p className="text-[#636270] w-[57px] h-[15px] font-normal text-[14px] leading-[15.4px]">Contact:</p>
