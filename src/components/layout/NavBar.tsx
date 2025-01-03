@@ -54,7 +54,7 @@ export default function NavBar() {
             </li>
               </ul>
 
-              {/* <Link href="/contactUs" className="lg:hidden hover:text-[#007580]"> */}
+              <Link href="/contactUs" className="lg:hidden hover:text-[#007580]">
 
         <div className="flex flex-row justify-between items-start w-[168px] h-[15px] gap-[8px] p-0  mx-auto ">
           <p className="text-[#636270] w-[57px] h-[15px] font-normal text-[14px] leading-[15.4px]">Contact:</p>
