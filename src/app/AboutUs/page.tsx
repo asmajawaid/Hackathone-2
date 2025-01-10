@@ -6,34 +6,6 @@ import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import { LuSprout } from "react-icons/lu";
 import { TbTruckDelivery } from "react-icons/tb";
 
-// const AboutContent = () => (
-//   <div className="w-full md:w-1/2 px-4 md:px-8 mb-6 md:mb-0 bg-teal-600 p-8 rounded-lg shadow-lg text-white flex flex-col justify-between items-center md:items-start">
-//     <h1 className="title-font font-medium text-2xl md:text-3xl mb-4 text-white text-center md:text-left">
-//       About Us - Comforty
-//     </h1>
-//     <p className="leading-relaxed mb-6 text-center md:text-left">
-//       Pour-over craft beer pug drinking vinegar live-edge gastropub, keytar
-//       neutra sustainable fingerstache kickstarter.
-//     </p>
-//     <button className="px-6 py-2 bg-teal-800 text-white font-semibold rounded hover:bg-teal-900 transition duration-300">
-//       View Product
-//     </button>
-//   </div>
-// );
-
-// const ImageContent = () => (
-//   <div className="w-full md:w-1/2 px-4 md:px-8 rounded-lg overflow-hidden mt-6 md:mt-0">
-//     <div className="relative w-full h-96">
-//       <Image
-//         className="object-cover object-center"
-//         src="/featuredata/Sofa1.png"
-//         alt="About Us Image"
-//         layout="fill"
-//         quality={90}
-//       />
-//     </div>
-//   </div>
-// );
 
 export default function AboutUs() {
   return (
@@ -116,7 +88,7 @@ export default function AboutUs() {
             Recycled packaging
           </h3>
           <p className="text-sm mt-2 text-[#007580]">
-            We use 100% recycled materials to ensure our footprint is more
+            We use 100 percent recycled materials to ensure our footprint is more
             manageable
           </p>
         </div>

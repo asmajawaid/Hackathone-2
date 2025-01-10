@@ -36,32 +36,33 @@ export default function NavBar() {
               <Menu className="p-0 gap-2 my-0 ml-2 text-[#636270]" />
             </SheetTrigger>
             <SheetContent className="bg-[#F0F2F3] w-[300px] sm:w-[540px]">
-              <ul className="flex flex-col gap-1 list-none justify-between p-0 my-0 mx-auto">
-              <li >
-              <Link href="/" className="text-[#636270] w-[40px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">Home</Link>
+              <ul className="flex flex-col gap-1 list-none justify-between p-0 my-0 mx-auto mb-5 text-xl">
+              <li className="mt-3" >
+              <Link href="/" className="text-[#636270] w-[40px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580] hover:underline">Home</Link>
             </li>
-            <li>
-              <Link href="/Shop" className="text-[#636270] w-[35px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">Shop</Link>
+            <li className="mt-3">
+              <Link href="/Shop" className="text-[#636270] w-[35px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580] hover:underline">Shop</Link>
             </li>
-            <li>
-              <Link href="/product" className="text-[#636270] w-[53px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">Product</Link>
+            <li className="mt-3">
+              <Link href="/product" className="text-[#636270] w-[53px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580] hover:underline">Product</Link>
             </li>
-            <li>
-              <Link href="/singleProductPage" className="text-[#636270] w-[42px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">Pages</Link>
+            <li className="mt-3">
+              <Link href="/singleProductPage" className="text-[#636270] w-[42px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580] hover:underline">Pages</Link>
             </li>
-            <li>
-              <Link href="/aboutUs" className="text-[#636270] w-[41px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580]">About</Link>
+            <li className="mt-3">
+              <Link href="/aboutUs" className="text-[#636270] w-[41px] h-[15px] font-medium text-[14px] leading-[15.4px] hover:text-[#007580] hover:underline">About</Link>
             </li>
               </ul>
 
-              <Link href="/contactUs" className="lg:hidden hover:text-[#007580]">
+              
 
-        <div className="flex flex-row justify-between items-start w-[168px] h-[15px] gap-[8px] p-0  mx-auto ">
-          <p className="text-[#636270] w-[57px] h-[15px] font-normal text-[14px] leading-[15.4px]">Contact:</p>
-          <p className="text-[#272343] w-[103px] h-[15px] font-medium text-[14px] leading-[15.4px]">(808) 555-0111</p>
-         
+        <div className="flex flex-row justify-between items-start w-[168px] h-[15px] gap-[8px] p-0 ml-0 mt-3 hover:text-[#007580] hover:underline">
+          <p className="text-[#636270] w-[57px] h-[15px] font-normal text-[14px] leading-[15.4px] hover:text-[#007580] hover:underline">
+          <Link href="/contactUs" className="lg:hidden hover:text-[#007580] ml-0 mt-3">Contact </Link>
+          </p>
+          
         </div>
-      </Link>
+     
             </SheetContent>
           </Sheet>
         </div>
