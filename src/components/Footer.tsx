@@ -23,10 +23,14 @@ export default function Footer() {
           </p>
           <ul className="flex gap-4">
             <li className="w-10 h-10 flex items-center justify-center rounded-full border border-transparent hover:border-[#007580]">
-              <FaFacebook className="text-[#272343] opacity-70 w-6 h-6 hover:text-[#007580]" />
+             <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+             <FaFacebook className="text-[#272343] opacity-70 w-6 h-6 hover:text-[#007580]" />
+             </Link>
             </li>
             <li className="w-10 h-10 flex items-center justify-center rounded-full border border-transparent hover:border-[#007580]">
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter className="text-[#272343] opacity-70 w-6 h-6 hover:text-[#007580]" />
+              </Link>
             </li>
             <li className="w-10 h-10 flex items-center justify-center rounded-full border border-transparent hover:border-[#007580]">
               <FaInstagram className="text-[#272343] opacity-70 w-6 h-6 hover:text-[#007580]" />

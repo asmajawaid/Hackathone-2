@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const images = [
   { src: '/images/card5.jpg', alt: 'Image 1' },
@@ -15,7 +16,7 @@ const ImageRow = () => {
   return (
     <div className="flex flex-wrap justify-center gap-4 cursor-pointer">
       {images.map((image, index) => (
-        <div key={index} className="w-28 h-36 relative">
+        <Link href="https://www.instagram.com" target="_blank" key={index} className="w-28 h-36 relative">
           <Image
             src={image.src}
             alt={image.alt}
@@ -23,7 +24,7 @@ const ImageRow = () => {
             objectFit="cover"
             className="rounded-md"
           />
-        </div>
+        </Link>
       ))}
     </div>
   );
