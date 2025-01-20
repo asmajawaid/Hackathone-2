@@ -1,6 +1,6 @@
 // lib/api.js
 
-import { Category } from "../../../data.ts/categories";
+import { Category } from "../../utils/categories";
 import { Product } from "../../../data.ts/product";
 
 // Function to fetch product data

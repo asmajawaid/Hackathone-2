@@ -7,6 +7,7 @@ import OurProduct from '@/components/OurProduct'
 import CompanyLogo from './companyLogo/page'
 
 export default function Home() {
+ 
   return (
     <div>
      
